@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="48" fill="url(#brandGrad)" />
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D95D39" />
+      <stop offset="100%" stop-color="#C0392B" />
+    </linearGradient>
+  </defs>
+  <!-- Flame Icon -->
+  <g transform="rotate(-10 50 50)">
+    <path fill="#FFFFFF" d="M50 16c-2 15-18 24-18 41 0 14 10 24 20 24 15 0 24-11 24-25 0-18-12-25-15-40-2 8-5 13-11 13 4-8 0-13 0-13z" />
+    <path fill="#E9A036" d="M50 48c-1 8-9 13-9 22 0 7 5 12 10 12 7 0 12-6 12-13 0-9-6-13-8-21-1 4-3 7-5 7 2-4 0-7 0-7z" />
+  </g>
+</svg>

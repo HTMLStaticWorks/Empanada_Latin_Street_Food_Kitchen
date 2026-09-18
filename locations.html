@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locations & Kitchen Counters — Casa Empanada Finder</title>
+  <meta name="description" content="Find a Casa Empanada street food counter near you. Check opening hours, street addresses, pickup options, and patio dining across all our locations.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Vendor & Custom CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==================== MANDATORY NAVBAR ==================== -->
+  <nav class="navbar navbar-expand-xl navbar-casa" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand-casa" href="index.html">
+        <div class="brand-icon"><i class="bi bi-fire"></i></div>
+        <span>Casa Empanada</span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2 d-xl-none">
+        <button class="navbar-toggler border-0 shadow-none p-2" type="button" data-bs-toggle="collapse" data-bs-target="#casaNavbar" aria-controls="casaNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1 text-primary"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="casaNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-xl-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-casa dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu dropdown-menu-casa" aria-labelledby="homeDropdown">
+              <li><a class="dropdown-item dropdown-item-casa" href="index.html">Home 1 — Editorial Classic</a></li>
+              <li><a class="dropdown-item dropdown-item-casa" href="home-2.html">Home 2 — The Empanada Counter</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link nav-link-casa" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-casa" href="catering.html">Catering</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-casa active" href="locations.html">Locations</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-casa" href="our-story.html">Our Story</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-casa" href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Mobile/Tab Navigation Action Controls (Inside Menu Collapse) -->
+        <div class="mobile-nav-actions d-xl-none mt-3 pt-3 border-top d-flex align-items-center justify-content-between gap-3">
+          <div class="d-flex align-items-center gap-2">
+            <button class="btn-rtl-toggle" type="button" aria-label="Toggle RTL direction" title="Toggle RTL direction">RTL</button>
+            <button class="btn-theme-toggle" type="button" aria-label="Toggle light and dark theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+          </div>
+          <a href="menu.html" class="btn-casa-primary btn-sm"><i class="bi bi-bag-fill"></i> Order Now</a>
+        </div>
+
+        <div class="d-none d-xl-flex align-items-center gap-3">
+          <button class="btn-rtl-toggle" type="button" aria-label="Toggle RTL direction" title="Toggle RTL direction">RTL</button>
+          <button class="btn-theme-toggle" type="button" aria-label="Toggle theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <a href="menu.html" class="btn-casa-primary"><i class="bi bi-bag-fill"></i> Order Now</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== LOCATIONS HERO ==================== -->
+  <section class="hero-section text-center pb-4">
+    <div class="container">
+      <span class="hero-badge"><i class="bi bi-geo-alt-fill"></i> Kitchen Counter Finder</span>
+      <h1 class="hero-title display-3 fw-bold mx-auto">Find Your Local Casa Counter</h1>
+      <p class="hero-lead mx-auto">Visit our street food kitchens for hot empanadas straight from the oven, ice-cold horchata, and vibrant Latin music.</p>
+    </div>
+  </section>
+
+  <!-- ==================== LOCATIONS GRID ==================== -->
+  <section class="py-4">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Location 1 -->
+        <div class="col-lg-4 col-md-6 reveal-element">
+          <div class="location-card">
+            <div class="location-map-placeholder">
+              <i class="bi bi-building"></i>
+            </div>
+            <span class="badge bg-danger rounded-pill px-3 py-1 font-accent mb-2">FLAGSHIP KITCHEN</span>
+            <h3 class="font-heading">Barrio Central</h3>
+            <p class="text-muted mb-2"><i class="bi bi-geo-alt text-danger me-1"></i> 142 Calle del Sol, Suite 10, Downtown</p>
+            <p class="text-muted mb-2"><i class="bi bi-clock text-danger me-1"></i> Mon–Sun: 10:00 AM – 10:00 PM</p>
+            <p class="text-muted mb-3"><i class="bi bi-telephone text-danger me-1"></i> (555) 387-2623</p>
+
+            <div class="d-flex flex-wrap gap-1 mb-4">
+              <span class="badge bg-surface text-primary border">Dine-In Patio</span>
+              <span class="badge bg-surface text-primary border">Express Pickup</span>
+              <span class="badge bg-surface text-primary border">Catering Kitchen</span>
+            </div>
+
+            <div class="d-flex gap-2">
+              <a href="location-details.html" class="btn-casa-secondary flex-grow-1 text-center justify-content-center">Location Info</a>
+              <a href="contact.html" class="btn-casa-primary flex-grow-1 text-center justify-content-center">Order Pickup</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Location 2 -->
+        <div class="col-lg-4 col-md-6 reveal-element">
+          <div class="location-card">
+            <div class="location-map-placeholder">
+              <i class="bi bi-shop"></i>
+            </div>
+            <span class="badge bg-warning text-dark rounded-pill px-3 py-1 font-accent mb-2">FOOD HALL STAND</span>
+            <h3 class="font-heading">Mercado Norte</h3>
+            <p class="text-muted mb-2"><i class="bi bi-geo-alt text-danger me-1"></i> 88 Avenida de la Plaza, Stall #14</p>
+            <p class="text-muted mb-2"><i class="bi bi-clock text-danger me-1"></i> Tue–Sun: 11:00 AM – 9:00 PM</p>
+            <p class="text-muted mb-3"><i class="bi bi-telephone text-danger me-1"></i> (555) 387-2624</p>
+
+            <div class="d-flex flex-wrap gap-1 mb-4">
+              <span class="badge bg-surface text-primary border">Counter Stand</span>
+              <span class="badge bg-surface text-primary border">Fast Takeaway</span>
+              <span class="badge bg-surface text-primary border">Delivery Hub</span>
+            </div>
+
+            <div class="d-flex gap-2">
+              <a href="location-details.html" class="btn-casa-secondary flex-grow-1 text-center justify-content-center">Location Info</a>
+              <a href="contact.html" class="btn-casa-primary flex-grow-1 text-center justify-content-center">Order Pickup</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Location 3 -->
+        <div class="col-lg-4 col-md-6 reveal-element">
+          <div class="location-card">
+            <div class="location-map-placeholder">
+              <i class="bi bi-music-note-beamed"></i>
+            </div>
+            <span class="badge bg-info text-dark rounded-pill px-3 py-1 font-accent mb-2">ARTS DISTRICT POP-UP</span>
+            <h3 class="font-heading">Distrito Arts</h3>
+            <p class="text-muted mb-2"><i class="bi bi-geo-alt text-danger me-1"></i> 405 Paseo de la Arte, Courtyard B</p>
+            <p class="text-muted mb-2"><i class="bi bi-clock text-danger me-1"></i> Thu–Sun: 12:00 PM – 11:00 PM</p>
+            <p class="text-muted mb-3"><i class="bi bi-telephone text-danger me-1"></i> (555) 387-2625</p>
+
+            <div class="d-flex flex-wrap gap-1 mb-4">
+              <span class="badge bg-surface text-primary border">Outdoor Patio</span>
+              <span class="badge bg-surface text-primary border">Live Music</span>
+              <span class="badge bg-surface text-primary border">Craft Beer Bar</span>
+            </div>
+
+            <div class="d-flex gap-2">
+              <a href="location-details.html" class="btn-casa-secondary flex-grow-1 text-center justify-content-center">Location Info</a>
+              <a href="contact.html" class="btn-casa-primary flex-grow-1 text-center justify-content-center">Order Pickup</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== NEW SECTION 1: KITCHEN COUNTER AMENITIES ==================== -->
+  <section class="py-5 border-top border-bottom border-opacity-10">
+    <div class="container py-4">
+      <div class="section-header text-center">
+        <span class="section-tag">Kitchen Experience</span>
+        <h2 class="section-title">Why Visit Our Neighborhood Counters?</h2>
+        <p class="section-subtitle mx-auto">Every Casa Empanada location is designed to bring you authentic Latin street food culture, fast service, and warm hospitality.</p>
+      </div>
+
+      <div class="row g-4 text-center">
+        <div class="col-lg-3 col-md-6 reveal-element">
+          <div class="p-4 bg-surface rounded-4 border h-100 shadow-sm">
+            <div class="fs-1 text-danger mb-3"><i class="bi bi-clock-history"></i></div>
+            <h4 class="font-heading">Express Hot Line</h4>
+            <p class="text-secondary small mb-0">Empanadas served piping hot in under 3 minutes with your choice of house dipping sauce.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 reveal-element">
+          <div class="p-4 bg-surface rounded-4 border h-100 shadow-sm">
+            <div class="fs-1 text-warning mb-3"><i class="bi bi-brightness-high-fill"></i></div>
+            <h4 class="font-heading">Shaded Patios</h4>
+            <p class="text-secondary small mb-0">Relax under heated outdoor festoon lighting with craft beers, sangria &amp; Latin tunes.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 reveal-element">
+          <div class="p-4 bg-surface rounded-4 border h-100 shadow-sm">
+            <div class="fs-1 text-success mb-3"><i class="bi bi-car-front-fill"></i></div>
+            <h4 class="font-heading">Curbside Pickup</h4>
+            <p class="text-secondary small mb-0">Order online in seconds and pull into designated grab-and-go bays for instant handoff.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 reveal-element">
+          <div class="p-4 bg-surface rounded-4 border h-100 shadow-sm">
+            <div class="fs-1 text-info mb-3"><i class="bi bi-music-note-beamed"></i></div>
+            <h4 class="font-heading">Live Weekend Vibes</h4>
+            <p class="text-secondary small mb-0">Enjoy acoustic guitar sessions, local neighborhood pop-ups, and weekend chef specials.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== NEW SECTION 2: DELIVERY & ORDER HUB ==================== -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="split-feature">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-7">
+            <span class="section-tag text-warning">Fast Local Dispatch</span>
+            <h2 class="section-title mb-3">Order Pickup Or Direct Delivery</h2>
+            <p class="text-secondary mb-4">Can't make it to our counters today? Get hot empanada platters and street food boxes delivered straight to your door in 30 minutes.</p>
+
+            <div class="d-flex flex-wrap gap-3">
+              <a href="menu.html" class="btn-casa-primary btn-lg"><i class="bi bi-bag-check-fill"></i> Order Online Direct</a>
+              <a href="catering-order.html" class="btn-casa-yellow btn-lg"><i class="bi bi-box-seam-fill"></i> Request Catering</a>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="bg-surface rounded-4 p-4 border shadow">
+              <h4 class="font-heading mb-3"><i class="bi bi-bicycle text-danger me-2"></i> Delivery Partners</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="d-flex align-items-center justify-content-between py-2 border-bottom">
+                  <span><i class="bi bi-check-circle-fill text-success me-2"></i> Casa Direct Pickup</span>
+                  <span class="badge bg-success text-white rounded-pill">0% Fee</span>
+                </li>
+                <li class="d-flex align-items-center justify-content-between py-2 border-bottom">
+                  <span><i class="bi bi-check-circle-fill text-success me-2"></i> DoorDash Express</span>
+                  <span class="badge bg-surface text-primary border">25-35 Min</span>
+                </li>
+                <li class="d-flex align-items-center justify-content-between py-2 border-bottom">
+                  <span><i class="bi bi-check-circle-fill text-success me-2"></i> UberEats Priority</span>
+                  <span class="badge bg-surface text-primary border">20-30 Min</span>
+                </li>
+                <li class="d-flex align-items-center justify-content-between py-2 pt-3">
+                  <span><i class="bi bi-telephone-fill text-danger me-2"></i> Phone Orders</span>
+                  <span class="fw-bold text-danger">(555) 387-2623</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MANDATORY FOOTER ==================== -->
+  <footer class="footer-casa" aria-label="Site footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1 -->
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand-casa mb-3 d-inline-flex" href="index.html">
+            <div class="brand-icon"><i class="bi bi-fire"></i></div>
+            <span class="brand-title">Casa Empanada</span>
+          </a>
+          <p class="footer-text pe-lg-4">Latin Flavor. Street Soul. Handcrafted daily empanadas, traditional Latin street eats, and bold homemade sauces served fresh in every neighborhood.</p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="col-lg-2 col-md-6">
+          <h5>Explore</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2 (Counter)</a></li>
+            <li><a href="menu.html">Full Menu</a></li>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="our-story.html">Our Story</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Services &amp; Orders</h5>
+          <ul class="footer-links">
+            <li><a href="catering-order.html">Catering Enquiry</a></li>
+            <li><a href="menu-details.html">Menu Details</a></li>
+            <li><a href="locations.html">Takeaway Pickup</a></li>
+            <li><a href="contact.html">Private Events</a></li>
+            <li><a href="coming-soon.html">New Locations</a></li>
+            <li><a href="404.html">404 Error Page</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Kitchen</h5>
+          <p class="footer-contact-item mb-2"><i class="bi bi-geo-alt text-danger me-2"></i> 142 Calle del Sol, Barrio Central</p>
+          <p class="footer-contact-item mb-2"><i class="bi bi-telephone text-danger me-2"></i> (555) 387-2623</p>
+          <p class="footer-contact-item mb-2"><i class="bi bi-envelope text-danger me-2"></i> hola@casaempanada.com</p>
+          <p class="footer-contact-item mb-0"><i class="bi bi-clock text-danger me-2"></i> Open Mon-Sun 10am - 10pm</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0 small">&copy; 2026 Casa Empanada Kitchen. All rights reserved. Crafted for food lovers.</p>
+        <div class="d-flex gap-3 small">
+          <a href="documentation/index.html">Template Documentation</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

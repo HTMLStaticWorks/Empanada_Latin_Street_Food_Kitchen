@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Catering Quote — Casa Empanada Order Form</title>
+  <meta name="description" content="Submit your event catering order or request a custom quote from Casa Empanada. Select packages, guest counts, dietary options, and delivery dates.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Vendor & Custom CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==================== MANDATORY NAVBAR ==================== -->
+  <nav class="navbar navbar-expand-xl navbar-casa" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand-casa" href="index.html">
+        <div class="brand-icon"><i class="bi bi-fire"></i></div>
+        <span>Casa Empanada</span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2 d-xl-none">
+        <button class="navbar-toggler border-0 shadow-none p-2" type="button" data-bs-toggle="collapse" data-bs-target="#casaNavbar" aria-controls="casaNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1 text-primary"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="casaNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-xl-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-casa dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu dropdown-menu-casa" aria-labelledby="homeDropdown">
+              <li><a class="dropdown-item dropdown-item-casa" href="index.html">Home 1 — Editorial Classic</a></li>
+              <li><a class="dropdown-item dropdown-item-casa" href="home-2.html">Home 2 — The Empanada Counter</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link nav-link-casa" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-casa active" href="catering.html">Catering</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-casa" href="locations.html">Locations</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-casa" href="our-story.html">Our Story</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-casa" href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Mobile/Tab Navigation Action Controls (Inside Menu Collapse) -->
+        <div class="mobile-nav-actions d-xl-none mt-3 pt-3 border-top d-flex align-items-center justify-content-between gap-3">
+          <div class="d-flex align-items-center gap-2">
+            <button class="btn-rtl-toggle" type="button" aria-label="Toggle RTL direction" title="Toggle RTL direction">RTL</button>
+            <button class="btn-theme-toggle" type="button" aria-label="Toggle light and dark theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+          </div>
+          <a href="catering.html" class="btn-casa-primary btn-sm"><i class="bi bi-arrow-left"></i> View Packages</a>
+        </div>
+
+        <div class="d-none d-xl-flex align-items-center gap-3">
+          <button class="btn-rtl-toggle" type="button" aria-label="Toggle RTL direction" title="Toggle RTL direction">RTL</button>
+          <button class="btn-theme-toggle" type="button" aria-label="Toggle theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <a href="catering.html" class="btn-casa-primary"><i class="bi bi-arrow-left"></i> View Packages</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== CATERING ORDER FORM ==================== -->
+  <section class="hero-section pb-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+
+          <div class="text-center mb-5">
+            <span class="hero-badge"><i class="bi bi-pencil-square"></i> Catering Order Form</span>
+            <h1 class="display-4 font-heading mb-2">Request Your Catering Quote</h1>
+            <p class="text-secondary fs-5">Fill out your event details below and our kitchen team will respond within 2 hours with menu options and pricing.</p>
+          </div>
+
+          <div class="bg-surface rounded-4 p-4 p-md-5 border shadow-lg">
+            <form class="needs-casa-validation" novalidate data-success-msg="¡Gracias! Your catering enquiry has been submitted. Our event team will call or email you shortly.">
+              
+              <h4 class="font-heading mb-3 border-bottom pb-2 text-danger"><i class="bi bi-person-fill"></i> 1. Contact Information</h4>
+              <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                  <label for="fullName" class="form-label-casa">Full Name *</label>
+                  <input type="text" class="form-control form-control-casa" id="fullName" placeholder="e.g. Maria Gonzalez" required>
+                  <div class="invalid-feedback">Please provide your name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="companyName" class="form-label-casa">Company / Organization (Optional)</label>
+                  <input type="text" class="form-control form-control-casa" id="companyName" placeholder="e.g. Acme Innovations">
+                </div>
+                <div class="col-md-6">
+                  <label for="emailAddr" class="form-label-casa">Email Address *</label>
+                  <input type="email" class="form-control form-control-casa" id="emailAddr" placeholder="name@domain.com" required>
+                  <div class="invalid-feedback">Valid email required.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="phoneNum" class="form-label-casa">Phone Number *</label>
+                  <input type="tel" class="form-control form-control-casa" id="phoneNum" placeholder="(555) 000-0000" required>
+                  <div class="invalid-feedback">Phone number required.</div>
+                </div>
+              </div>
+
+              <h4 class="font-heading mb-3 border-bottom pb-2 text-danger"><i class="bi bi-calendar-event"></i> 2. Event Details</h4>
+              <div class="row g-3 mb-4">
+                <div class="col-md-4">
+                  <label for="eventDate" class="form-label-casa">Event Date *</label>
+                  <input type="date" class="form-control form-control-casa" id="eventDate" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="eventType" class="form-label-casa">Event Type *</label>
+                  <select class="form-select form-control-casa" id="eventType" required>
+                    <option value="">Select Event Type...</option>
+                    <option value="Corporate Office Lunch">Corporate Office Lunch</option>
+                    <option value="Birthday Celebration">Birthday Party</option>
+                    <option value="Private Gathering">Private Gathering</option>
+                    <option value="Wedding / Reception">Wedding / Reception</option>
+                    <option value="Festival / Community">Community Festival</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label for="guestCount" class="form-label-casa">Estimated Guests *</label>
+                  <input type="number" class="form-control form-control-casa" id="guestCount" placeholder="e.g. 25" min="5" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="locationChoice" class="form-label-casa">Preferred Fulfilling Counter *</label>
+                  <select class="form-select form-control-casa" id="locationChoice" required>
+                    <option value="Barrio Central">Barrio Central (Flagship)</option>
+                    <option value="Mercado Norte">Mercado Norte Food Hall</option>
+                    <option value="Distrito Arts">Distrito Arts Pop-Up</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="serviceStyle" class="form-label-casa">Service Preference *</label>
+                  <select class="form-select form-control-casa" id="serviceStyle" required>
+                    <option value="Counter Pickup">Hot Counter Pickup</option>
+                    <option value="Direct Delivery & Setup">Direct Hot Delivery &amp; Setup</option>
+                    <option value="Live Pop-Up Station">Live Street Kitchen Pop-Up</option>
+                  </select>
+                </div>
+              </div>
+
+              <h4 class="font-heading mb-3 border-bottom pb-2 text-danger"><i class="bi bi-box-seam"></i> 3. Menu &amp; Package Selection</h4>
+              <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                  <label for="packageChoice" class="form-label-casa">Preferred Catering Package</label>
+                  <select class="form-select form-control-casa" id="packageChoice">
+                    <option value="Custom Menu">Custom A La Carte Selection</option>
+                    <option value="Street Starter">Street Starter ($145 - 10-15 Guests)</option>
+                    <option value="Empanada Feast" selected>Empanada Feast ($295 - 20-35 Guests)</option>
+                    <option value="Full Latin Spread">Full Latin Spread ($560 - 40-60+ Guests)</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="budgetRange" class="form-label-casa">Estimated Budget Range</label>
+                  <select class="form-select form-control-casa" id="budgetRange">
+                    <option value="Under $200">Under $200</option>
+                    <option value="$200 - $500" selected>$200 - $500</option>
+                    <option value="$500 - $1,000">$500 - $1,000</option>
+                    <option value="$1,000+">$1,000+</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label-casa d-block">Dietary Requirements</label>
+                  <div class="d-flex flex-wrap gap-4 pt-1">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="dietVeg">
+                      <label class="form-check-label" for="dietVeg">Vegetarian Empanadas Needed</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="dietVegan">
+                      <label class="form-check-label" for="dietVegan">Vegan Plantain/Yuca Options</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="dietGF">
+                      <label class="form-check-label" for="dietGF">Gluten-Free Arepa Options</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="notes" class="form-label-casa">Additional Event Notes &amp; Special Requests</label>
+                  <textarea class="form-control form-control-casa" id="notes" rows="4" placeholder="Tell us about specific empanada fillings, allergen warnings, or delivery timing..."></textarea>
+                </div>
+              </div>
+
+              <div class="text-center pt-3">
+                <button type="submit" class="btn-casa-primary btn-lg w-100 max-width-400 py-3"><i class="bi bi-send-fill"></i> Request Catering Quote</button>
+                <small class="text-muted d-block mt-2"><i class="bi bi-shield-check"></i> No payment required now. This is a catering enquiry form.</small>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MANDATORY FOOTER ==================== -->
+  <footer class="footer-casa" aria-label="Site footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1 -->
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand-casa mb-3 d-inline-flex" href="index.html">
+            <div class="brand-icon"><i class="bi bi-fire"></i></div>
+            <span class="brand-title">Casa Empanada</span>
+          </a>
+          <p class="footer-text pe-lg-4">Latin Flavor. Street Soul. Handcrafted daily empanadas, traditional Latin street eats, and bold homemade sauces served fresh in every neighborhood.</p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="col-lg-2 col-md-6">
+          <h5>Explore</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2 (Counter)</a></li>
+            <li><a href="menu.html">Full Menu</a></li>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="our-story.html">Our Story</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Services &amp; Orders</h5>
+          <ul class="footer-links">
+            <li><a href="catering-order.html">Catering Enquiry</a></li>
+            <li><a href="menu-details.html">Menu Details</a></li>
+            <li><a href="locations.html">Takeaway Pickup</a></li>
+            <li><a href="contact.html">Private Events</a></li>
+            <li><a href="coming-soon.html">New Locations</a></li>
+            <li><a href="404.html">404 Error Page</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Kitchen</h5>
+          <p class="footer-contact-item mb-2"><i class="bi bi-geo-alt text-danger me-2"></i> 142 Calle del Sol, Barrio Central</p>
+          <p class="footer-contact-item mb-2"><i class="bi bi-telephone text-danger me-2"></i> (555) 387-2623</p>
+          <p class="footer-contact-item mb-2"><i class="bi bi-envelope text-danger me-2"></i> hola@casaempanada.com</p>
+          <p class="footer-contact-item mb-0"><i class="bi bi-clock text-danger me-2"></i> Open Mon-Sun 10am - 10pm</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0 small">&copy; 2026 Casa Empanada Kitchen. All rights reserved. Crafted for food lovers.</p>
+        <div class="d-flex gap-3 small">
+          <a href="documentation/index.html">Template Documentation</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation — Casa Empanada HTML Template</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+
+  <!-- Vendor & Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    pre { background: var(--bg-secondary); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color); color: var(--text-primary); }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-casa">
+    <div class="container">
+      <a class="navbar-brand-casa" href="../index.html">
+        <div class="brand-icon"><i class="bi bi-fire"></i></div>
+        <span>Casa Empanada Docs</span>
+      </a>
+      <div class="ms-auto d-flex align-items-center gap-2">
+        <button class="btn-rtl-toggle" type="button" aria-label="Toggle RTL direction" title="Toggle RTL direction">RTL</button>
+        <button class="btn-theme-toggle" type="button" aria-label="Toggle theme"><i class="bi bi-moon-stars-fill"></i></button>
+        <a href="../index.html" class="btn-casa-primary btn-sm"><i class="bi bi-eye"></i> View Live Demo</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Sidebar Nav -->
+        <div class="col-lg-3 mb-4">
+          <div class="bg-surface rounded-4 p-4 border sticky-top" style="top: 90px;">
+            <h5 class="font-heading mb-3 text-danger">Documentation</h5>
+            <div class="nav flex-column nav-pills gap-1">
+              <a href="#intro" class="nav-link active">1. Overview</a>
+              <a href="#structure" class="nav-link">2. File Structure</a>
+              <a href="#colors" class="nav-link">3. Theme &amp; Colors</a>
+              <a href="#pages" class="nav-link">4. HTML Pages</a>
+              <a href="#js" class="nav-link">5. JavaScript Engine</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Docs Content -->
+        <div class="col-lg-9">
+          
+          <!-- Section 1 -->
+          <section id="intro" class="mb-5 bg-surface p-4 p-md-5 rounded-4 border">
+            <h2 class="font-heading mb-3">1. Template Overview</h2>
+            <p><strong>Casa Empanada</strong> is a commercial-grade, multi-page HTML5 template designed for Empanada &amp; Latin Street Food Kitchens. It features a rich design system, custom CSS variable tokens, full Light &amp; Dark theme persistence, responsive Bootstrap 5 grid layout, and interactive GSAP animations.</p>
+          </section>
+
+          <!-- Section 2 -->
+          <section id="structure" class="mb-5 bg-surface p-4 p-md-5 rounded-4 border">
+            <h2 class="font-heading mb-3">2. File &amp; Folder Structure</h2>
+            <pre><code>empanada-latin-street-food/
+├── index.html               # Home 1 (Editorial Classic)
+├── home-2.html              # Home 2 (The Empanada Counter)
+├── menu.html                # Full Menu with Category Filters
+├── menu-details.html        # Single Item Detail Showcase
+├── catering.html            # Event Catering Landing Page
+├── catering-order.html      # Catering Order & Enquiry Form
+├── locations.html           # Kitchen Counter Finder
+├── location-details.html    # Single Location Page
+├── our-story.html           # Brand Heritage & Story
+├── contact.html             # Contact Page with Validation
+├── 404.html                 # Custom 404 Error Screen
+├── coming-soon.html         # Launch Landing Page
+│
+├── assets/
+│   ├── css/
+│   │   ├── bootstrap.min.css
+│   │   ├── bootstrap-icons.min.css
+│   │   └── style.css       # Main Design System Stylesheet
+│   ├── js/
+│   │   ├── bootstrap.bundle.min.js
+│   │   ├── gsap.min.js
+│   │   └── main.js         # Master Theme & Interactions Engine
+│   └── images/              # Optimized food & location photography
+│
+└── documentation/
+    └── index.html           # Template Documentation</code></pre>
+          </section>
+
+          <!-- Section 3 -->
+          <section id="colors" class="mb-5 bg-surface p-4 p-md-5 rounded-4 border">
+            <h2 class="font-heading mb-3">3. Theme System &amp; Colors</h2>
+            <p>Colors are controlled via CSS variables in <code>assets/css/style.css</code>. You can easily modify the primary terracotta accent, chili red, and warm cream background variables:</p>
+            <pre><code>:root {
+  --bg-primary: #FDF8F2;
+  --accent-primary: #D95D39; /* Terracotta */
+  --accent-secondary: #C0392B; /* Chili Red */
+  --accent-yellow: #E9A036; /* Warm Golden */
+  --accent-green: #3E7B54; /* Herb Green */
+}
+
+[data-theme="dark"] {
+  --bg-primary: #140E0A;
+  --accent-primary: #E56E4B;
+}</code></pre>
+          </section>
+
+          <!-- Section 4 -->
+          <section id="pages" class="mb-5 bg-surface p-4 p-md-5 rounded-4 border">
+            <h2 class="font-heading mb-3">4. HTML Pages</h2>
+            <p>All 12 pages are fully responsive and visually complete with authentic Latin street food copywriting, realistic menus, and active navbar links.</p>
+          </section>
+
+          <!-- Section 5 -->
+          <section id="js" class="mb-5 bg-surface p-4 p-md-5 rounded-4 border">
+            <h2 class="font-heading mb-3">5. JavaScript Engine</h2>
+            <p><code>assets/js/main.js</code> handles theme switching, localStorage persistence, sticky navbar animations, category filtering, and form validation toasts.</p>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-casa">
+    <div class="container">
+      <div class="row g-4 text-start">
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand-casa mb-3 d-inline-flex" href="../index.html">
+            <div class="brand-icon"><i class="bi bi-fire"></i></div>
+            <span class="brand-title">Casa Empanada</span>
+          </a>
+          <p class="footer-text pe-lg-4">Latin Flavor. Street Soul. Handcrafted daily empanadas, traditional Latin street eats, and bold homemade sauces served fresh in every neighborhood.</p>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5>Explore</h5>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../home-2.html">Home 2</a></li>
+            <li><a href="../menu.html">Menu</a></li>
+            <li><a href="../catering.html">Catering</a></li>
+            <li><a href="../locations.html">Locations</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Services &amp; Orders</h5>
+          <ul class="footer-links">
+            <li><a href="../catering-order.html">Catering Enquiry</a></li>
+            <li><a href="../menu-details.html">Menu Details</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Kitchen</h5>
+          <p class="footer-contact-item mb-2"><i class="bi bi-geo-alt text-danger me-2"></i> 142 Calle del Sol, Barrio Central</p>
+          <p class="footer-contact-item mb-2"><i class="bi bi-telephone text-danger me-2"></i> (555) 387-2623</p>
+          <p class="footer-contact-item mb-0"><i class="bi bi-envelope text-danger me-2"></i> hola@casaempanada.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom text-center pt-4 mt-4">
+        <p class="mb-0 small">&copy; 2026 Casa Empanada Kitchen Template Documentation.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

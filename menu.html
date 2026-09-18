@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Menu — Casa Empanada Street Food Kitchen</title>
+  <meta name="description" content="Explore the complete menu at Casa Empanada. Signature empanadas, stuffed arepas, crispy tostones, house sauces, handcrafted churros, and authentic Latin drinks.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Vendor & Custom CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==================== MANDATORY NAVBAR ==================== -->
+  <nav class="navbar navbar-expand-xl navbar-casa" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand-casa" href="index.html">
+        <div class="brand-icon"><i class="bi bi-fire"></i></div>
+        <span>Casa Empanada</span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2 d-xl-none">
+        <button class="navbar-toggler border-0 shadow-none p-2" type="button" data-bs-toggle="collapse" data-bs-target="#casaNavbar" aria-controls="casaNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1 text-primary"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="casaNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-xl-center">
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-casa dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu dropdown-menu-casa" aria-labelledby="homeDropdown">
+              <li><a class="dropdown-item dropdown-item-casa" href="index.html">Home 1 — Editorial Classic</a></li>
+              <li><a class="dropdown-item dropdown-item-casa" href="home-2.html">Home 2 — The Empanada Counter</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link nav-link-casa active" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-casa" href="catering.html">Catering</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-casa" href="locations.html">Locations</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-casa" href="our-story.html">Our Story</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-casa" href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Mobile/Tab Navigation Action Controls (Inside Menu Collapse) -->
+        <div class="mobile-nav-actions d-xl-none mt-3 pt-3 border-top d-flex align-items-center justify-content-between gap-3">
+          <div class="d-flex align-items-center gap-2">
+            <button class="btn-rtl-toggle" type="button" aria-label="Toggle RTL direction" title="Toggle RTL direction">RTL</button>
+            <button class="btn-theme-toggle" type="button" aria-label="Toggle light and dark theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+          </div>
+          <a href="catering-order.html" class="btn-casa-primary btn-sm"><i class="bi bi-bag-fill"></i> Order Now</a>
+        </div>
+
+        <div class="d-none d-xl-flex align-items-center gap-3">
+          <button class="btn-rtl-toggle" type="button" aria-label="Toggle RTL direction" title="Toggle RTL direction">RTL</button>
+          <button class="btn-theme-toggle" type="button" aria-label="Toggle theme"><i class="bi bi-moon-stars-fill"></i></button>
+          <a href="catering-order.html" class="btn-casa-primary"><i class="bi bi-bag-fill"></i> Order Now</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== MENU HERO ==================== -->
+  <section class="hero-section text-center pb-4">
+    <div class="container">
+      <span class="hero-badge"><i class="bi bi-journal-text"></i> Handcrafted Daily Menu</span>
+      <h1 class="hero-title display-3 fw-bold mx-auto">Latin Flavor. Street Soul.</h1>
+      <p class="hero-lead mx-auto">All items made fresh from scratch using family recipes, fresh herbs, and premium local ingredients.</p>
+
+      <!-- Category Filter Tabs -->
+      <div class="category-filter-nav mt-4">
+        <button class="filter-btn active" data-filter="all">All Items</button>
+        <button class="filter-btn" data-filter="empanadas">Empanadas</button>
+        <button class="filter-btn" data-filter="street-food">Street Food</button>
+        <button class="filter-btn" data-filter="sides">Sides &amp; Dips</button>
+        <button class="filter-btn" data-filter="desserts">Desserts</button>
+        <button class="filter-btn" data-filter="drinks">Drinks</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MAIN MENU GRID ==================== -->
+  <section class="py-4">
+    <div class="container">
+
+      <!-- Legend Key -->
+      <div class="d-flex flex-wrap align-items-center justify-content-center gap-4 mb-5 p-3 bg-surface rounded-4 border">
+        <span class="fw-bold small text-uppercase font-accent">Dietary Key:</span>
+        <span class="dietary-tag spicy"><i class="bi bi-fire"></i> Spicy</span>
+        <span class="dietary-tag veg"><i class="bi bi-leaf-fill"></i> Vegetarian</span>
+        <span class="badge bg-danger text-white rounded-pill px-3 py-1 font-accent">Popular</span>
+      </div>
+
+      <div class="row g-4" id="menuGrid">
+
+        <!-- ===== EMPANADAS ===== -->
+        <!-- 1. Argentine Beef -->
+        <div class="col-md-6 col-lg-4 menu-filterable-item" data-category="empanadas">
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/empanadas/empanada-cut-beef.jpg" alt="Argentine Beef Empanada">
+              <span class="food-card-badge">Bestseller</span>
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-title-row">
+                <h3 class="food-card-title"><a href="menu-details.html" class="text-reset">Argentine Beef</a></h3>
+                <span class="food-card-price">$4.75</span>
+              </div>
+              <p class="food-card-desc">Slow-braised beef brisket, caramelized onions, green olives, cumin, and boiled egg.</p>
+              <div class="food-card-meta">
+                <span class="dietary-tag spicy"><i class="bi bi-fire"></i> Mild Spice</span>
+                <a href="menu-details.html" class="btn btn-sm btn-outline-danger rounded-pill">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Chicken Sofrito -->
+        <div class="col-md-6 col-lg-4 menu-filterable-item" data-category="empanadas">
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/street-food/street-food-spread.jpg" alt="Chicken Sofrito">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-title-row">
+                <h3 class="food-card-title"><a href="menu-details.html" class="text-reset">Chicken Sofrito</a></h3>
+                <span class="food-card-price">$4.50</span>
+              </div>
+              <p class="food-card-desc">Tender pulled chicken simmered in garlic bell pepper sofrito with sweet peppers.</p>
+              <div class="food-card-meta">
+                <span class="dietary-tag veg"><i class="bi bi-check-circle"></i> House Special</span>
+                <a href="menu-details.html" class="btn btn-sm btn-outline-danger rounded-pill">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Spinach & Queso -->
+        <div class="col-md-6 col-lg-4 menu-filterable-item" data-category="empanadas">
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/hero/hero-empanadas.jpg" alt="Spinach & Queso">
+              <span class="food-card-badge bg-success">Vegetarian</span>
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-title-row">
+                <h3 class="food-card-title"><a href="menu-details.html" class="text-reset">Spinach &amp; Queso</a></h3>
+                <span class="food-card-price">$4.50</span>
+              </div>
+              <p class="food-card-desc">Organic spinach, garlic ricotta, melted queso blanco, and fresh nutmeg.</p>
+              <div class="food-card-meta">
+                <span class="dietary-tag veg"><i class="bi bi-leaf-fill"></i> Vegetarian</span>
+                <a href="menu-details.html" class="btn btn-sm btn-outline-danger rounded-pill">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Spicy Chorizo -->
+        <div class="col-md-6 col-lg-4 menu-filterable-item" data-category="empanadas">
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/empanadas/empanada-cut-beef.jpg" alt="Spicy Chorizo">
+              <span class="food-card-badge">Chef Choice</span>
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-title-row">
+                <h3 class="food-card-title"><a href="menu-details.html" class="text-reset">Spicy Chorizo</a></h3>
+                <span class="food-card-price">$4.95</span>
+              </div>
+              <p class="food-card-desc">Smoky artisan pork chorizo, potato cubes, habanero salsa &amp; Oaxaca cheese.</p>
+              <div class="food-card-meta">
+                <span class="dietary-tag spicy"><i class="bi bi-fire"></i> Spicy</span>
+                <a href="menu-details.html" class="btn btn-sm btn-outline-danger rounded-pill">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== STREET FOOD ===== -->
+        <!-- 5. Stuffed Arepas -->
+        <div class="col-md-6 col-lg-4 menu-filterable-item" data-category="street-food">
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/street-food/street-food-spread.jpg" alt="Stuffed Arepa">
+              <span class="food-card-badge">Street Classic</span>
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-title-row">
+                <h3 class="food-card-title"><a href="menu-details.html" class="text-reset">Pabellón Arepa</a></h3>
+                <span class="food-card-price">$8.95</span>
+              </div>
+              <p class="food-card-desc">Crispy corn cake stuffed with shredded beef, black beans, sweet plantains &amp; cotija cheese.</p>
+              <div class="food-card-meta">
+                <span class="dietary-tag veg"><i class="bi bi-check-circle"></i> Gluten Free</span>
+                <a href="menu-details.html" class="btn btn-sm btn-outline-danger rounded-pill">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Crispy Tostones -->
+        <div class="col-md-6 col-lg-4 menu-filterable-item" data-category="street-food">
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/hero/hero-empanadas.jpg" alt="Crispy Tostones">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-title-row">
+                <h3 class="food-card-title"><a href="menu-details.html" class="text-reset">Loaded Tostones</a></h3>
+                <span class="food-card-price">$7.50</span>
+              </div>
+              <p class="food-card-desc">Double-fried smashed green plantains topped with garlic mojo, cheese &amp; avocado salsa.</p>
+              <div class="food-card-meta">
+                <span class="dietary-tag veg"><i class="bi bi-leaf-fill"></i> Vegetarian</span>
+                <a href="menu-details.html" class="btn btn-sm btn-outline-danger rounded-pill">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Yuca Fries -->
+        <div class="col-md-6 col-lg-4 menu-filterable-item" data-category="street-food">
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/street-food/street-food-spread.jpg" alt="Golden Yuca Fries">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-title-row">
+                <h3 class="food-card-title"><a href="menu-details.html" class="text-reset">Golden Yuca Fries</a></h3>
+                <span class="food-card-price">$6.25</span>
+              </div>
+              <p class="food-card-desc">Crispy cassava root fries tossed in lime sea salt, served with garlic sofrito aioli.</p>
+              <div class="food-card-meta">
+                <span class="dietary-tag veg"><i class="bi bi-leaf-fill"></i> Vegan Option</span>
+                <a href="menu-details.html" class="btn btn-sm btn-outline-danger rounded-pill">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== SIDES & DIPS ===== -->
+        <!-- 8. Chimichurri Dip -->
+        <div class="col-md-6 col-lg-4 menu-filterable-item" data-category="sides">
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/hero/hero-empanadas.jpg" alt="House Chimichurri">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-title-row">
+                <h3 class="food-card-title"><a href="menu-details.html" class="text-reset">House Chimichurri</a></h3>
+                <span class="food-card-price">$1.75</span>
+              </div>
+              <p class="food-card-desc">Fresh parsley, minced garlic, red chili flakes, oregano, red wine vinegar &amp; olive oil.</p>
+              <div class="food-card-meta">
+                <span class="dietary-tag veg"><i class="bi bi-heart-fill"></i> Signature Dip</span>
+                <a href="menu-details.html" class="btn btn-sm btn-outline-danger rounded-pill">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== DESSERTS ===== -->
+        <!-- 9. Churros with Dulce de Leche -->
+        <div class="col-md-6 col-lg-4 menu-filterable-item" data-category="desserts">
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/street-food/street-food-spread.jpg" alt="Warm Cinnamon Churros">
+              <span class="food-card-badge bg-warning text-dark">Sweet Fav</span>
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-title-row">
+                <h3 class="food-card-title"><a href="menu-details.html" class="text-reset">Churros &amp; Caramel</a></h3>
+                <span class="food-card-price">$6.50</span>
+              </div>
+              <p class="food-card-desc">Piping hot fried churros rolled in cinnamon sugar with warm Argentine dulce de leche dip.</p>
+              <div class="food-card-meta">
+                <span class="dietary-tag veg"><i class="bi bi-star-fill text-warning"></i> Dessert</span>
+                <a href="menu-details.html" class="btn btn-sm btn-outline-danger rounded-pill">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== DRINKS ===== -->
+        <!-- 10. Fresh Horchata -->
+        <div class="col-md-6 col-lg-4 menu-filterable-item" data-category="drinks">
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/hero/hero-empanadas.jpg" alt="Fresh Horchata Drink">
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-title-row">
+                <h3 class="food-card-title"><a href="menu-details.html" class="text-reset">House Rice Horchata</a></h3>
+                <span class="food-card-price">$4.25</span>
+              </div>
+              <p class="food-card-desc">Creamy chilled rice water steeped with cinnamon, vanilla bean, and toasted almond milk.</p>
+              <div class="food-card-meta">
+                <span class="dietary-tag veg"><i class="bi bi-cup-straw"></i> Refreshing</span>
+                <a href="menu-details.html" class="btn btn-sm btn-outline-danger rounded-pill">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. Smoky Chipotle Carnitas (New Card 1) -->
+        <div class="col-md-6 col-lg-4 menu-filterable-item" data-category="empanadas">
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/empanadas/empanada-cut-beef.jpg" alt="Smoky Chipotle Carnitas">
+              <span class="food-card-badge">New Special</span>
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-title-row">
+                <h3 class="food-card-title"><a href="menu-details.html" class="text-reset">Smoky Chipotle Carnitas</a></h3>
+                <span class="food-card-price">$4.85</span>
+              </div>
+              <p class="food-card-desc">Slow-roasted citrus pork shoulder, charred chipotle peppers, black beans &amp; Monterey Jack cheese.</p>
+              <div class="food-card-meta">
+                <span class="dietary-tag spicy"><i class="bi bi-fire"></i> Smoky &amp; Spicy</span>
+                <a href="menu-details.html" class="btn btn-sm btn-outline-danger rounded-pill">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. Tropical Passionfruit Agua (New Card 2) -->
+        <div class="col-md-6 col-lg-4 menu-filterable-item" data-category="drinks">
+          <div class="food-card">
+            <div class="food-card-img-wrap">
+              <img src="assets/images/street-food/street-food-spread.jpg" alt="Tropical Passionfruit Agua">
+              <span class="food-card-badge bg-info text-dark">Ice Cold</span>
+            </div>
+            <div class="food-card-body">
+              <div class="food-card-title-row">
+                <h3 class="food-card-title"><a href="menu-details.html" class="text-reset">Passionfruit Agua Fresca</a></h3>
+                <span class="food-card-price">$4.50</span>
+              </div>
+              <p class="food-card-desc">Freshly pressed passionfruit nectar, sparkling cane sugar, key lime juice &amp; crushed mint sprig.</p>
+              <div class="food-card-meta">
+                <span class="dietary-tag veg"><i class="bi bi-cup-straw"></i> Artisan Drink</span>
+                <a href="menu-details.html" class="btn btn-sm btn-outline-danger rounded-pill">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MANDATORY FOOTER ==================== -->
+  <footer class="footer-casa" aria-label="Site footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1 -->
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand-casa mb-3 d-inline-flex" href="index.html">
+            <div class="brand-icon"><i class="bi bi-fire"></i></div>
+            <span class="brand-title">Casa Empanada</span>
+          </a>
+          <p class="footer-text pe-lg-4">Latin Flavor. Street Soul. Handcrafted daily empanadas, traditional Latin street eats, and bold homemade sauces served fresh in every neighborhood.</p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="col-lg-2 col-md-6">
+          <h5>Explore</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2 (Counter)</a></li>
+            <li><a href="menu.html">Full Menu</a></li>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="our-story.html">Our Story</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Services &amp; Orders</h5>
+          <ul class="footer-links">
+            <li><a href="catering-order.html">Catering Enquiry</a></li>
+            <li><a href="menu-details.html">Menu Details</a></li>
+            <li><a href="locations.html">Takeaway Pickup</a></li>
+            <li><a href="contact.html">Private Events</a></li>
+            <li><a href="coming-soon.html">New Locations</a></li>
+            <li><a href="404.html">404 Error Page</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Contact Kitchen</h5>
+          <p class="footer-contact-item mb-2"><i class="bi bi-geo-alt text-danger me-2"></i> 142 Calle del Sol, Barrio Central</p>
+          <p class="footer-contact-item mb-2"><i class="bi bi-telephone text-danger me-2"></i> (555) 387-2623</p>
+          <p class="footer-contact-item mb-2"><i class="bi bi-envelope text-danger me-2"></i> hola@casaempanada.com</p>
+          <p class="footer-contact-item mb-0"><i class="bi bi-clock text-danger me-2"></i> Open Mon-Sun 10am - 10pm</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0 small">&copy; 2026 Casa Empanada Kitchen. All rights reserved. Crafted for food lovers.</p>
+        <div class="d-flex gap-3 small">
+          <a href="documentation/index.html">Template Documentation</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
