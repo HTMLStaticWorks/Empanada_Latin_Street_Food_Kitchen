@@ -104,7 +104,17 @@ document.addEventListener('DOMContentLoaded', () => {
      2. Sticky Navbar & Scroll Progress
      -------------------------------------------------------------------------- */
   const navbar = document.querySelector('.navbar-casa');
-  const backToTopBtn = document.querySelector('.btn-back-to-top');
+  let backToTopBtn = document.querySelector('.btn-back-to-top');
+
+  if (!backToTopBtn && document.body) {
+    backToTopBtn = document.createElement('button');
+    backToTopBtn.className = 'btn-back-to-top';
+    backToTopBtn.type = 'button';
+    backToTopBtn.setAttribute('aria-label', 'Back to top');
+    backToTopBtn.setAttribute('title', 'Back to top');
+    backToTopBtn.innerHTML = '<i class="bi bi-arrow-up"></i>';
+    document.body.appendChild(backToTopBtn);
+  }
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
