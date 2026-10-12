@@ -80,7 +80,7 @@
   </nav>
 
   <!-- ==================== LOCATIONS HERO ==================== -->
-  <section class="hero-section text-center pb-4">
+  <section class="hero-section page-hero hero-locations text-center pb-4">
     <div class="container">
       <span class="hero-badge"><i class="bi bi-geo-alt-fill"></i> Kitchen Counter Finder</span>
       <h1 class="hero-title display-3 fw-bold mx-auto">Find Your Local Casa Counter</h1>
@@ -89,7 +89,7 @@
     </div>
   </section>
 
-  <!-- ==================== LOCATIONS GRID ==================== -->
+  <!-- ==================== LOCATIONS GRID (Req 7 Compact & Balanced Layout) ==================== -->
   <section class="py-4 locations-grid-section">
     <div class="container">
       <div class="row g-4">
@@ -97,27 +97,30 @@
         <!-- Location 1 -->
         <div class="col-12 col-xl-4 reveal-element">
           <div class="location-card">
-            <div class="location-map-placeholder">
-              <i class="bi bi-building"></i>
+            <div class="location-card-image-wrap">
+              <img src="assets/images/locations/locations-hero.jpg" alt="Barrio Central Flagship Counter & Street Patio">
             </div>
-            <span class="badge bg-danger rounded-pill px-3 py-1 font-accent mb-2">FLAGSHIP KITCHEN</span>
-            <h3 class="font-heading">Barrio Central</h3>
-            <p class="text-muted mb-2"><i class="bi bi-geo-alt text-danger me-1"></i> 142 Calle del Sol, Suite 10,
-              Downtown</p>
-            <p class="text-muted mb-2"><i class="bi bi-clock text-danger me-1"></i> Mon–Sun: 10:00 AM – 10:00 PM</p>
-            <p class="text-muted mb-3"><i class="bi bi-telephone text-danger me-1"></i> (555) 387-2623</p>
-
-            <div class="d-flex flex-wrap gap-1 mb-4">
-              <span class="badge bg-surface text-primary border">Dine-In Patio</span>
-              <span class="badge bg-surface text-primary border">Express Pickup</span>
-              <span class="badge bg-surface text-primary border">Catering Kitchen</span>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <span class="badge bg-danger rounded-pill px-2 py-1 font-accent" style="font-size: 0.72rem;">FLAGSHIP KITCHEN</span>
+              <span class="text-success small fw-bold font-accent"><i class="bi bi-circle-fill me-1" style="font-size: 0.55rem;"></i>Open Now</span>
+            </div>
+            <h3 class="location-card-title">Barrio Central</h3>
+            
+            <div class="location-details-list">
+              <p><i class="bi bi-geo-alt text-danger me-1"></i> 142 Calle del Sol, Suite 10, Downtown</p>
+              <p><i class="bi bi-clock text-danger me-1"></i> Mon–Sun: 10:00 AM – 10:00 PM</p>
+              <p><i class="bi bi-telephone text-danger me-1"></i> (555) 387-2623</p>
             </div>
 
-            <div class="d-flex gap-2">
-              <a href="location-details.html"
-                class="btn-casa-secondary flex-grow-1 text-center justify-content-center">Location Info</a>
-              <a href="contact.html" class="btn-casa-primary flex-grow-1 text-center justify-content-center">Order
-                Pickup</a>
+            <div class="d-flex flex-wrap gap-1 mb-3">
+              <span class="location-tag-pill">Dine-In Patio</span>
+              <span class="location-tag-pill">Express Pickup</span>
+              <span class="location-tag-pill">Catering Kitchen</span>
+            </div>
+
+            <div class="location-card-actions">
+              <a href="location-details.html" class="btn btn-casa-secondary">Location Info</a>
+              <a href="contact.html" class="btn btn-casa-primary">Order Pickup</a>
             </div>
           </div>
         </div>
@@ -125,27 +128,30 @@
         <!-- Location 2 -->
         <div class="col-12 col-xl-4 reveal-element">
           <div class="location-card">
-            <div class="location-map-placeholder">
-              <i class="bi bi-shop"></i>
+            <div class="location-card-image-wrap">
+              <img src="assets/images/hero/hero-counter-market.jpg" alt="Mercado Norte Food Hall Counter Stand">
             </div>
-            <span class="badge bg-warning text-dark rounded-pill px-3 py-1 font-accent mb-2">FOOD HALL STAND</span>
-            <h3 class="font-heading">Mercado Norte</h3>
-            <p class="text-muted mb-2"><i class="bi bi-geo-alt text-danger me-1"></i> 88 Avenida de la Plaza, Stall #14
-            </p>
-            <p class="text-muted mb-2"><i class="bi bi-clock text-danger me-1"></i> Tue–Sun: 11:00 AM – 9:00 PM</p>
-            <p class="text-muted mb-3"><i class="bi bi-telephone text-danger me-1"></i> (555) 387-2624</p>
-
-            <div class="d-flex flex-wrap gap-1 mb-4">
-              <span class="badge bg-surface text-primary border">Counter Stand</span>
-              <span class="badge bg-surface text-primary border">Fast Takeaway</span>
-              <span class="badge bg-surface text-primary border">Delivery Hub</span>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <span class="badge bg-warning text-dark rounded-pill px-2 py-1 font-accent" style="font-size: 0.72rem;">FOOD HALL STAND</span>
+              <span class="text-success small fw-bold font-accent"><i class="bi bi-circle-fill me-1" style="font-size: 0.55rem;"></i>Open Now</span>
+            </div>
+            <h3 class="location-card-title">Mercado Norte</h3>
+            
+            <div class="location-details-list">
+              <p><i class="bi bi-geo-alt text-danger me-1"></i> 88 Avenida de la Plaza, Stall #14</p>
+              <p><i class="bi bi-clock text-danger me-1"></i> Tue–Sun: 11:00 AM – 9:00 PM</p>
+              <p><i class="bi bi-telephone text-danger me-1"></i> (555) 387-2624</p>
             </div>
 
-            <div class="d-flex gap-2">
-              <a href="location-details.html"
-                class="btn-casa-secondary flex-grow-1 text-center justify-content-center">Location Info</a>
-              <a href="contact.html" class="btn-casa-primary flex-grow-1 text-center justify-content-center">Order
-                Pickup</a>
+            <div class="d-flex flex-wrap gap-1 mb-3">
+              <span class="location-tag-pill">Counter Stand</span>
+              <span class="location-tag-pill">Fast Takeaway</span>
+              <span class="location-tag-pill">Delivery Hub</span>
+            </div>
+
+            <div class="location-card-actions">
+              <a href="location-details.html" class="btn btn-casa-secondary">Location Info</a>
+              <a href="contact.html" class="btn btn-casa-primary">Order Pickup</a>
             </div>
           </div>
         </div>
@@ -153,27 +159,30 @@
         <!-- Location 3 -->
         <div class="col-12 col-xl-4 reveal-element">
           <div class="location-card">
-            <div class="location-map-placeholder">
-              <i class="bi bi-music-note-beamed"></i>
+            <div class="location-card-image-wrap">
+              <img src="assets/images/street-food/street-food-spread.jpg" alt="Distrito Arts Courtyard Pop-Up Kitchen">
             </div>
-            <span class="badge bg-info text-dark rounded-pill px-3 py-1 font-accent mb-2">ARTS DISTRICT POP-UP</span>
-            <h3 class="font-heading">Distrito Arts</h3>
-            <p class="text-muted mb-2"><i class="bi bi-geo-alt text-danger me-1"></i> 405 Paseo de la Arte, Courtyard B
-            </p>
-            <p class="text-muted mb-2"><i class="bi bi-clock text-danger me-1"></i> Thu–Sun: 12:00 PM – 11:00 PM</p>
-            <p class="text-muted mb-3"><i class="bi bi-telephone text-danger me-1"></i> (555) 387-2625</p>
-
-            <div class="d-flex flex-wrap gap-1 mb-4">
-              <span class="badge bg-surface text-primary border">Outdoor Patio</span>
-              <span class="badge bg-surface text-primary border">Live Music</span>
-              <span class="badge bg-surface text-primary border">Craft Beer Bar</span>
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <span class="badge bg-info text-dark rounded-pill px-2 py-1 font-accent" style="font-size: 0.72rem;">ARTS DISTRICT POP-UP</span>
+              <span class="text-warning small fw-bold font-accent"><i class="bi bi-clock me-1"></i>Opens 12 PM</span>
+            </div>
+            <h3 class="location-card-title">Distrito Arts</h3>
+            
+            <div class="location-details-list">
+              <p><i class="bi bi-geo-alt text-danger me-1"></i> 405 Paseo de la Arte, Courtyard B</p>
+              <p><i class="bi bi-clock text-danger me-1"></i> Thu–Sun: 12:00 PM – 11:00 PM</p>
+              <p><i class="bi bi-telephone text-danger me-1"></i> (555) 387-2625</p>
             </div>
 
-            <div class="d-flex gap-2">
-              <a href="location-details.html"
-                class="btn-casa-secondary flex-grow-1 text-center justify-content-center">Location Info</a>
-              <a href="contact.html" class="btn-casa-primary flex-grow-1 text-center justify-content-center">Order
-                Pickup</a>
+            <div class="d-flex flex-wrap gap-1 mb-3">
+              <span class="location-tag-pill">Outdoor Patio</span>
+              <span class="location-tag-pill">Live Music</span>
+              <span class="location-tag-pill">Craft Beer Bar</span>
+            </div>
+
+            <div class="location-card-actions">
+              <a href="location-details.html" class="btn btn-casa-secondary">Location Info</a>
+              <a href="contact.html" class="btn btn-casa-primary">Order Pickup</a>
             </div>
           </div>
         </div>
@@ -244,9 +253,9 @@
               food boxes delivered straight to your door in 30 minutes.</p>
 
             <div class="cta-btn-group d-flex flex-wrap gap-3">
-              <a href="menu.html" class="btn-casa-primary btn-lg"><i class="bi bi-bag-check-fill"></i> Order Online
+              <a href="menu.html" class="btn-casa-primary"><i class="bi bi-bag-check-fill"></i> Order Online
                 Direct</a>
-              <a href="catering-order.html" class="btn-casa-yellow btn-lg"><i class="bi bi-box-seam-fill"></i> Request
+              <a href="catering-order.html" class="btn-casa-yellow"><i class="bi bi-box-seam-fill"></i> Request
                 Catering</a>
             </div>
           </div>

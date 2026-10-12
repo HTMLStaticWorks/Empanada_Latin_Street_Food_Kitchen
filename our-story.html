@@ -80,23 +80,30 @@
   </nav>
 
   <!-- ==================== STORY HERO ==================== -->
-  <section class="hero-section text-center pb-4">
+  <section class="hero-section page-hero hero-story text-center pb-4">
     <div class="container">
       <span class="hero-badge"><i class="bi bi-heart-fill text-danger"></i> Our Heritage &amp; Passion</span>
-      <h1 class="hero-title display-3 fw-bold mx-auto">Latin Flavor.<br><span class="text-danger">Street Soul.</span>
-      </h1>
+      <h1 class="hero-title display-3 fw-bold mx-auto">Latin Flavor.<br><span class="text-danger">Street Soul.</span></h1>
       <p class="hero-lead mx-auto">Casa Empanada was born out of a simple belief: that food made by hand with genuine
         Latin ingredients brings people together like nothing else.</p>
     </div>
   </section>
 
-  <!-- ==================== EDITORIAL STORY SPLIT ==================== -->
+  <!-- ==================== EDITORIAL STORY SPLIT (Req 12 Differentiated Image) ==================== -->
   <section class="py-5 border-top border-bottom border-opacity-10 editorial-story-section">
     <div class="container py-4">
       <div class="row align-items-center gy-5">
         <div class="col-lg-6">
           <div class="hero-image-wrapper">
-            <img src="assets/images/hero/hero-empanadas.jpg" alt="Hand-crimping dough process">
+            <!-- Differentiated artisanal dough crimping photo (not reusing Home 1 hero) -->
+            <img src="assets/images/story/story-heritage-process.jpg" alt="Skilled artisan hands hand-crimping empanada dough with repulgue braid">
+            <div class="floating-card-badge">
+              <i class="bi bi-clock-history fs-3 text-warning"></i>
+              <div>
+                <strong class="d-block font-accent">The 13-Fold Repulgue</strong>
+                <small class="text-muted">Folded By Hand Every Single Morning</small>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -128,39 +135,281 @@
     </div>
   </section>
 
-  <!-- ==================== PHILOSOPHY CARDS ==================== -->
-  <section class="py-5">
+  <!-- ==================== KEY SECTION 1: OUR FOOD PHILOSOPHY (Req 8) ==================== -->
+  <section class="py-5" id="foodPhilosophySection">
     <div class="container py-4">
       <div class="section-header text-center">
-        <span class="section-tag">Our Values</span>
-        <h2 class="section-title">The Casa Kitchen Rules</h2>
+        <span class="section-tag text-danger"><i class="bi bi-stars me-1"></i> Core Principles</span>
+        <h2 class="section-title">Our Food Philosophy</h2>
+        <p class="section-subtitle mx-auto">Four sacred rules guide every batch that comes out of our stone ovens each morning.</p>
       </div>
 
-      <div class="row g-4 text-center justify-content-center">
-        <div class="col-lg-4 col-md-6 col-12">
-          <div class="p-4 bg-surface rounded-4 border h-100 shadow-sm">
+      <div class="row g-4">
+        <!-- Philosophy 1 -->
+        <div class="col-lg-3 col-md-6 reveal-element">
+          <div class="philosophy-card" style="border-top-color: var(--accent-primary);">
             <div class="fs-1 text-danger mb-3"><i class="bi bi-hand-thumbs-up-fill"></i></div>
-            <h4 class="font-heading">Folded By Hand</h4>
-            <p class="text-muted mb-0">No automated dough presses. Every braid and crimp is crafted by skilled kitchen
-              artisans.</p>
+            <h4 class="font-heading mb-2">1. The Sacred Repulgue</h4>
+            <p class="text-secondary small mb-0">We reject automated dough presses. Every empanada receives our signature 13-fold repulgue braid by hand, creating airy pockets that seal in natural braising juices.</p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-12">
-          <div class="p-4 bg-surface rounded-4 border h-100 shadow-sm">
+        <!-- Philosophy 2 -->
+        <div class="col-lg-3 col-md-6 reveal-element">
+          <div class="philosophy-card" style="border-top-color: var(--accent-yellow);">
             <div class="fs-1 text-warning mb-3"><i class="bi bi-fire"></i></div>
-            <h4 class="font-heading">Fresh Sofrito</h4>
-            <p class="text-muted mb-0">Our aromatic garlic, pepper, and onion bases are chopped fresh every morning at
-              dawn.</p>
+            <h4 class="font-heading mb-2">2. 3-Hour Fresh Sofrito</h4>
+            <p class="text-secondary small mb-0">At 5:00 AM daily, we chop fresh sweet bell peppers, red onions, garlic, cumin, and Mexican oregano. Simmered slow in olive oil, it forms the soul of every meat filling.</p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-12">
-          <div class="p-4 bg-surface rounded-4 border h-100 shadow-sm">
-            <div class="fs-1 text-success mb-3"><i class="bi bi-people-fill"></i></div>
-            <h4 class="font-heading">Community</h4>
-            <p class="text-muted mb-0">We source from local farmers and support local neighborhood arts &amp; music
-              programs.</p>
+        <!-- Philosophy 3 -->
+        <div class="col-lg-3 col-md-6 reveal-element">
+          <div class="philosophy-card" style="border-top-color: var(--accent-green);">
+            <div class="fs-1 text-success mb-3"><i class="bi bi-patch-check-fill"></i></div>
+            <h4 class="font-heading mb-2">3. Stone Deck Baking</h4>
+            <p class="text-secondary small mb-0">Rather than soaking in heavy fryer fats, our empanadas bake at 425°F on stone hearth oven decks. The result is a flaky, blistered golden crust with genuine flavor clarity.</p>
+          </div>
+        </div>
+
+        <!-- Philosophy 4 -->
+        <div class="col-lg-3 col-md-6 reveal-element">
+          <div class="philosophy-card" style="border-top-color: var(--accent-secondary);">
+            <div class="fs-1 text-danger mb-3"><i class="bi bi-flower1"></i></div>
+            <h4 class="font-heading mb-2">4. Sourced With Respect</h4>
+            <p class="text-secondary small mb-0">We work directly with regional family ranches and dairy farms for pasture-raised beef, Oaxaca melting cheese, and organic herbs. Zero additives, zero artificial dyes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== KEY SECTION 2: MEET THE TEAM (Req 8) ==================== -->
+  <section class="py-5 bg-surface-elevated border-top border-bottom border-opacity-10" id="meetTheTeamSection">
+    <div class="container py-4">
+      <div class="section-header text-center">
+        <span class="section-tag text-warning"><i class="bi bi-people-fill me-1"></i> Kitchen Artisans</span>
+        <h2 class="section-title">Meet The Team Behind The Kitchen</h2>
+        <p class="section-subtitle mx-auto">The passionate culinary minds, bakers, and street-food lovers handcrafting your everyday craving.</p>
+      </div>
+
+      <!-- Feature Culinary Team Spotlight -->
+      <div class="row align-items-center gy-4 mb-5 p-4 p-lg-5 bg-surface rounded-4 border shadow-sm">
+        <div class="col-lg-6">
+          <div class="rounded-4 overflow-hidden border shadow">
+            <img src="assets/images/story/team-chefs.jpg" alt="Chef Maria Alvarez and the Casa Empanada Kitchen Team" class="w-100 h-100 object-fit-cover">
+          </div>
+        </div>
+        <div class="col-lg-6 ps-lg-4">
+          <span class="badge bg-danger rounded-pill font-accent px-3 py-1 mb-2">FOUNDER &amp; HEAD CHEF</span>
+          <h3 class="display-6 font-heading mb-3">Maria Alvarez</h3>
+          <p class="text-secondary mb-3 fst-italic fs-5">
+            "Growing up in Mendoza, Sundays meant gathering around abuela’s wooden table to fold empanadas for the whole barrio. Casa Empanada is our homage to that warmth, laughter, and uncompromising flavor."
+          </p>
+          <p class="text-muted small mb-4">
+            Trained in classical Buenos Aires culinary arts and Latin street gastronomy, Chef Maria oversees all 12 signature fillings and works the morning oven line alongside our team every single day.
+          </p>
+          <div class="d-flex align-items-center gap-3">
+            <div class="brand-icon" style="width: 38px; height: 38px; font-size: 1rem;"><i class="bi bi-heart-fill"></i></div>
+            <span class="font-accent fw-bold small text-uppercase">15+ Years Latin Culinary Craft</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Members Grid -->
+      <div class="row g-4">
+        <!-- Member 1 -->
+        <div class="col-lg-4 col-md-6 reveal-element">
+          <div class="team-card p-4 text-center">
+            <div class="brand-icon mx-auto mb-3" style="width: 54px; height: 54px; font-size: 1.4rem;">
+              <i class="bi bi-person-badge-fill"></i>
+            </div>
+            <h4 class="font-heading mb-1">Maria Alvarez</h4>
+            <span class="badge bg-danger rounded-pill font-accent px-3 py-1 mb-3">Founder &amp; Executive Chef</span>
+            <p class="text-secondary small mb-0">Crafting heritage recipes, hand-mixing the daily sofrito base, and sourcing spices directly from South American family farms.</p>
+          </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="col-lg-4 col-md-6 reveal-element">
+          <div class="team-card p-4 text-center">
+            <div class="brand-icon mx-auto mb-3" style="width: 54px; height: 54px; font-size: 1.4rem; background: linear-gradient(135deg, var(--accent-yellow), var(--accent-primary));">
+              <i class="bi bi-egg-fried"></i>
+            </div>
+            <h4 class="font-heading mb-1">Carlos Ortiz</h4>
+            <span class="badge bg-warning text-dark rounded-pill font-accent px-3 py-1 mb-3">Master Dough Baker</span>
+            <p class="text-secondary small mb-0">The master of the repulgue braid. Carlos oversees dough hydration, resting cycles, and stone oven hearth calibrations at 425°F.</p>
+          </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="col-lg-4 col-md-6 reveal-element">
+          <div class="team-card p-4 text-center">
+            <div class="brand-icon mx-auto mb-3" style="width: 54px; height: 54px; font-size: 1.4rem; background: linear-gradient(135deg, var(--accent-green), #27ae60);">
+              <i class="bi bi-cup-hot-fill"></i>
+            </div>
+            <h4 class="font-heading mb-1">Sofia Mendez</h4>
+            <span class="badge bg-success text-white rounded-pill font-accent px-3 py-1 mb-3">Guest Experience &amp; Culture</span>
+            <p class="text-secondary small mb-0">Bringing street hospitality to life at our counter windows. Sofia coordinates local music, community patio pop-ups, and catering events.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== KEY SECTION 3: OUR FAVORITE LATIN STREET FOOD (Req 8) ==================== -->
+  <section class="py-5" id="favoriteStreetFoodSection">
+    <div class="container py-4">
+      <div class="section-header text-center">
+        <span class="section-tag text-danger"><i class="bi bi-fire me-1"></i> Kitchen Staff Picks</span>
+        <h2 class="section-title">Our Favorite Latin Street Food</h2>
+        <p class="section-subtitle mx-auto">The dishes our chefs and bakers crave the most when the ovens shut down for the night.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Pick 1 -->
+        <div class="col-lg-3 col-md-6 reveal-element">
+          <div class="favorite-street-food-card">
+            <img src="assets/images/empanadas/empanada-cut-beef.jpg" alt="Argentine Beef Empanada Cut Open">
+            <div class="p-4">
+              <span class="badge bg-danger rounded-pill font-accent mb-2">CHEF MARIA'S PICK</span>
+              <h4 class="font-heading fs-5 mb-2">Classic Argentine Beef</h4>
+              <p class="text-secondary small mb-3">"12-hour braised beef brisket with green olives, sweet onions, and cumin. A spoonful of chimichurri on every bite is non-negotiable."</p>
+              <div class="d-flex justify-content-between align-items-center pt-2 border-top border-opacity-10">
+                <span class="fw-bold text-danger font-accent">$4.75</span>
+                <a href="menu.html" class="btn btn-sm btn-outline-danger rounded-pill">Order Item</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pick 2 -->
+        <div class="col-lg-3 col-md-6 reveal-element">
+          <div class="favorite-street-food-card">
+            <img src="assets/images/menu/stuffed-arepa.jpg" alt="Stuffed Venezuelan Pabellón Arepa">
+            <div class="p-4">
+              <span class="badge bg-warning text-dark rounded-pill font-accent mb-2">CARLOS'S PICK</span>
+              <h4 class="font-heading fs-5 mb-2">Venezuelan Arepa Pabellón</h4>
+              <p class="text-secondary small mb-3">"Crispy white corn arepa hot off the griddle, stuffed with sweet fried plantains, black beans, cotija cheese, and shredded flank steak."</p>
+              <div class="d-flex justify-content-between align-items-center pt-2 border-top border-opacity-10">
+                <span class="fw-bold text-danger font-accent">$8.95</span>
+                <a href="menu.html" class="btn btn-sm btn-outline-danger rounded-pill">Order Item</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pick 3 -->
+        <div class="col-lg-3 col-md-6 reveal-element">
+          <div class="favorite-street-food-card">
+            <img src="assets/images/menu/crispy-tostones.jpg" alt="Crispy Fried Plantain Tostones with Mojo Dip">
+            <div class="p-4">
+              <span class="badge bg-success text-white rounded-pill font-accent mb-2">SOFIA'S PICK</span>
+              <h4 class="font-heading fs-5 mb-2">Garlic Mojo Tostones</h4>
+              <p class="text-secondary small mb-3">"Green plantains smashed flat, twice-fried till shatteringly crunchy, sprinkled with sea salt, and drowned in our fresh garlic lime mojo."</p>
+              <div class="d-flex justify-content-between align-items-center pt-2 border-top border-opacity-10">
+                <span class="fw-bold text-danger font-accent">$5.75</span>
+                <a href="menu.html" class="btn btn-sm btn-outline-danger rounded-pill">Order Item</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pick 4 -->
+        <div class="col-lg-3 col-md-6 reveal-element">
+          <div class="favorite-street-food-card">
+            <img src="assets/images/menu/churros-caramel.jpg" alt="Crispy Fried Cinnamon Sugar Churros with Dulce de Leche">
+            <div class="p-4">
+              <span class="badge bg-secondary font-accent mb-2">KITCHEN OBSESSION</span>
+              <h4 class="font-heading fs-5 mb-2">Churros con Dulce de Leche</h4>
+              <p class="text-secondary small mb-3">"Fried fresh to order, rolled in fine cinnamon and organic cane sugar, and served with thick warm Argentine caramel. Pure joy."</p>
+              <div class="d-flex justify-content-between align-items-center pt-2 border-top border-opacity-10">
+                <span class="fw-bold text-danger font-accent">$5.25</span>
+                <a href="menu.html" class="btn btn-sm btn-outline-danger rounded-pill">Order Item</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== KEY SECTION 4: CUSTOMER LOVE (Req 8) ==================== -->
+  <section class="py-5 bg-surface-elevated border-top border-bottom border-opacity-10" id="customerLoveSection">
+    <div class="container py-4">
+      <div class="section-header text-center">
+        <span class="section-tag text-warning"><i class="bi bi-chat-heart-fill me-1"></i> Community Voices</span>
+        <h2 class="section-title">Customer Love &amp; Press</h2>
+        <p class="section-subtitle mx-auto">What food writers, neighborhood regulars, and empanada cravers have to say about Casa.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Review 1 -->
+        <div class="col-lg-4 col-md-6 reveal-element">
+          <div class="testimonial-card">
+            <div class="text-warning mb-3">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-secondary fst-italic mb-4 flex-grow-1">
+              "The flakiest pastry crust in the city, period. The beef brisket filling is deeply seasoned, tender, and unctuous. You can taste the hours of care in every single bite."
+            </p>
+            <div class="d-flex align-items-center gap-3 pt-3 border-top border-opacity-10">
+              <div class="brand-icon" style="width: 40px; height: 40px; font-size: 1.1rem;"><i class="bi bi-newspaper"></i></div>
+              <div>
+                <strong class="d-block font-accent">The City Culinary Gazette</strong>
+                <small class="text-muted">Editor's Choice Street Food 2025</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="col-lg-4 col-md-6 reveal-element">
+          <div class="testimonial-card">
+            <div class="text-warning mb-3">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-secondary fst-italic mb-4 flex-grow-1">
+              "Casa Empanada brings back the exact street counter sensations from our trips to South America. The stone hearth baking makes all the difference—golden without grease!"
+            </p>
+            <div class="d-flex align-items-center gap-3 pt-3 border-top border-opacity-10">
+              <div class="brand-icon" style="width: 40px; height: 40px; font-size: 1.1rem;"><i class="bi bi-heart-fill"></i></div>
+              <div>
+                <strong class="d-block font-accent">Javier &amp; Nina Cruz</strong>
+                <small class="text-muted">Barrio Central Loyal Patrons</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="col-lg-4 col-md-6 reveal-element">
+          <div class="testimonial-card">
+            <div class="text-warning mb-3">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-secondary fst-italic mb-4 flex-grow-1">
+              "We ordered 60 empanadas for our office milestone lunch. Delivered steaming hot, every flavor was distinct, and the chimichurri dip literally vanished within minutes. 10/10."
+            </p>
+            <div class="d-flex align-items-center gap-3 pt-3 border-top border-opacity-10">
+              <div class="brand-icon" style="width: 40px; height: 40px; font-size: 1.1rem;"><i class="bi bi-building"></i></div>
+              <div>
+                <strong class="d-block font-accent">Rachel Morgan</strong>
+                <small class="text-muted">Downtown Design Collective</small>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -168,14 +417,17 @@
   </section>
 
   <!-- ==================== FINAL CTA ==================== -->
-  <section class="py-5 text-center border-top">
+  <section class="py-5 text-center">
     <div class="container py-4">
-      <h2 class="display-4 font-heading mb-3">Taste The Tradition Today</h2>
-      <p class="fs-5 text-muted max-width-600 mx-auto mb-4">Experience the authentic flavor of Casa Empanada at any of
-        our street counters.</p>
-      <div class="cta-btn-group d-flex flex-wrap justify-content-center gap-3">
-        <a href="menu.html" class="btn-casa-primary btn-lg">Explore Menu</a>
-        <a href="locations.html" class="btn-casa-yellow btn-lg">Find Nearby Counter</a>
+      <div class="final-order-cta-box text-center">
+        <h2 class="display-4 font-heading mb-3 text-white">Taste The Tradition Today</h2>
+        <p class="fs-5 text-light opacity-90 max-width-600 mx-auto mb-4">
+          Experience the authentic flavor of Casa Empanada at any of our street counters or order a hot counter box online.
+        </p>
+        <div class="cta-btn-group d-flex flex-wrap justify-content-center gap-3">
+          <a href="menu.html" class="btn-casa-primary btn-lg">Explore Menu</a>
+          <a href="locations.html" class="btn-casa-yellow btn-lg">Find Nearby Counter</a>
+        </div>
       </div>
     </div>
   </section>

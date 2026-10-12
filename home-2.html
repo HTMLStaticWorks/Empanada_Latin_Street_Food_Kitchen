@@ -83,35 +83,85 @@
     </div>
   </nav>
 
-  <!-- ==================== SPLIT SCREEN HERO (COUNTER CONCEPT) ==================== -->
-  <section class="hero-section pb-4">
+  <!-- ==================== DISTINCT HOME 2 HERO: THE LIVE EMPANADA COUNTER ==================== -->
+  <section class="hero-section home-2-hero">
     <div class="container">
       <div class="row align-items-center gy-5">
-        <div class="col-lg-6 order-lg-2">
-          <div class="hero-image-wrapper border-0">
-            <img src="assets/images/street-food/street-food-spread.jpg" alt="Street Food Counter Market Spread">
-            <div class="floating-card-badge">
-              <span class="badge bg-danger rounded-pill px-3 py-2 font-accent">LIVE COUNTER</span>
-              <div class="ms-2">
-                <strong class="d-block">Batch #47 Baked Fresh</strong>
-                <small class="text-muted">4 Minutes Ago in Barrio Central</small>
+        <!-- Content Column -->
+        <div class="col-lg-6">
+          <div class="counter-live-pill">
+            <span class="counter-pulse-dot"></span>
+            <span>Live Counter Oven • Hot Batch Ready In 3 Mins</span>
+          </div>
+          
+          <h1 class="hero-title fw-bold">Step Up To The Counter.<br><span class="text-warning">Grab It Piping Hot.</span></h1>
+          
+          <p class="hero-lead">Handcrafted Latin empanadas rolling out of our stone ovens every 15 minutes. Pick your favorite fillings from the hot rack, pair with handmade herb dips, and grab cold horchata.</p>
+
+          <div class="hero-btn-group d-flex flex-wrap gap-3 mt-4">
+            <a href="menu.html" class="btn-casa-yellow btn-lg">
+              <i class="bi bi-fire"></i> See Today's Specials
+            </a>
+            <a href="locations.html" class="btn-casa-secondary btn-lg">
+              <i class="bi bi-geo-alt-fill"></i> Nearest Counter
+            </a>
+          </div>
+
+          <!-- Live Oven Batch Tracker Widget -->
+          <div class="counter-batch-widget">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <span class="font-accent fw-bold small text-uppercase text-warning">
+                <i class="bi bi-clock-history me-1"></i> Current Counter Status
+              </span>
+              <span class="badge bg-danger rounded-pill font-accent">Oven 425°F</span>
+            </div>
+            <div class="counter-batch-row">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-success"></i>
+                <span>Argentine Classic Beef</span>
               </div>
+              <span class="badge bg-success rounded-pill font-accent">Ready Hot • Batch #47</span>
+            </div>
+            <div class="counter-batch-row">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-hourglass-split text-warning"></i>
+                <span>Garlic Sofrito Chicken</span>
+              </div>
+              <span class="badge bg-warning text-dark rounded-pill font-accent">Baking • In 3 Mins</span>
+            </div>
+            <div class="counter-batch-row">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-success"></i>
+                <span>Spinach &amp; Queso Blanco</span>
+              </div>
+              <span class="badge bg-success rounded-pill font-accent">Ready Hot • Batch #46</span>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-6 order-lg-1">
-          <span class="hero-badge"><i class="bi bi-shop"></i> The Street Market Experience</span>
-          <h1 class="hero-title display-3 fw-bold">Your Favorite Filling<br><span class="text-warning">Has a New
-              Home.</span></h1>
-          <p class="hero-lead">Step up to the counter. Fresh empanadas rolling out of the oven every 15 minutes. Pair
-            with handcrafted Latin dips, iced passion fruit drinks, and piping hot churros.</p>
+        <!-- Visual Counter Showcase Column -->
+        <div class="col-lg-6">
+          <div class="counter-showcase-card">
+            <img src="assets/images/hero/hero-counter-market.jpg" alt="Artisanal Latin Empanada Counter with Fresh Baked Batches">
+            <div class="counter-badge-float">
+              <i class="bi bi-patch-check-fill text-warning me-1"></i> Stone Oven Baked
+            </div>
+            <div class="floating-card-badge">
+              <span class="badge bg-danger rounded-pill px-3 py-2 font-accent">LIVE COUNTER</span>
+              <div class="ms-2">
+                <strong class="d-block text-dark">Barrio Central Counter</strong>
+                <small class="text-muted">Fresh Batch Every 15 Minutes</small>
+              </div>
+            </div>
+          </div>
 
-          <div class="hero-btn-group d-flex flex-wrap gap-3 mt-4">
-            <a href="menu.html" class="btn-casa-yellow btn-lg"><i class="bi bi-fire"></i> See Today's Counter
-              Specials</a>
-            <a href="locations.html" class="btn-casa-secondary btn-lg"><i class="bi bi-geo-alt"></i> Find A Counter Near
-              You</a>
+          <!-- Counter Steps Mini Strip -->
+          <div class="counter-ticker-bar justify-content-around text-center mt-3">
+            <div><i class="bi bi-1-circle-fill text-warning me-1"></i> Pick Fillings</div>
+            <div class="opacity-25">|</div>
+            <div><i class="bi bi-2-circle-fill text-warning me-1"></i> Choose Dips</div>
+            <div class="opacity-25">|</div>
+            <div><i class="bi bi-3-circle-fill text-warning me-1"></i> Ready in 3 Mins</div>
           </div>
         </div>
       </div>
@@ -159,7 +209,7 @@
         <div class="col-lg-4 col-md-6 reveal-element">
           <div class="food-card">
             <div class="food-card-img-wrap">
-              <img src="assets/images/hero/hero-empanadas.jpg" alt="Roasted Garlic Chicken">
+              <img src="assets/images/menu/empanada-chicken-sofrito.jpg" alt="Roasted Garlic Chicken">
               <span class="food-card-badge bg-info text-dark">Customer Fav</span>
             </div>
             <div class="food-card-body">

@@ -500,14 +500,294 @@ img {
 }
 
 /* --------------------------------------------------------------------------
-   4. Hero Sections
+   4. Hero Sections — Comprehensive System with Consistent Heights & Separation
    -------------------------------------------------------------------------- */
 .hero-section {
-  padding: 10rem 0 5rem 0;
+  padding: 9.5rem 0 5rem 0;
   position: relative;
   overflow: hidden;
 }
 
+/* Home 1 Hero Distinction */
+.home-1-hero {
+  min-height: 580px;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(circle at 75% 25%, rgba(217, 93, 57, 0.08) 0%, rgba(233, 160, 54, 0.06) 45%, transparent 75%);
+  border-bottom: 2px solid var(--border-color);
+}
+
+[data-theme="dark"] .home-1-hero {
+  background: radial-gradient(circle at 75% 25%, rgba(229, 110, 75, 0.12) 0%, rgba(240, 174, 72, 0.08) 45%, transparent 75%);
+}
+
+/* Details Pages Hero (Location & Menu Details) */
+.details-hero {
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(circle at 85% 20%, rgba(217, 93, 57, 0.08) 0%, rgba(233, 160, 54, 0.05) 50%, transparent 75%);
+  border-bottom: 2px solid var(--border-color);
+}
+
+[data-theme="dark"] .details-hero {
+  background: radial-gradient(circle at 85% 20%, rgba(229, 110, 75, 0.12) 0%, rgba(240, 174, 72, 0.08) 50%, transparent 75%);
+}
+
+/* Home 2 Distinct Hero: The Empanada Live Counter Experience */
+.home-2-hero {
+  min-height: 600px;
+  padding: 8.5rem 0 4.5rem 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #1A110A 0%, #29180E 50%, #150D07 100%);
+  color: #FDF8F2;
+  border-bottom: 4px solid var(--accent-yellow);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.home-2-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 40%, rgba(233, 160, 54, 0.14) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.home-2-hero .hero-title {
+  color: #FFFFFF !important;
+}
+
+.home-2-hero .hero-lead {
+  color: rgba(253, 248, 242, 0.9) !important;
+}
+
+.counter-live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(233, 160, 54, 0.18);
+  border: 1px solid rgba(233, 160, 54, 0.45);
+  color: var(--accent-yellow);
+  font-family: var(--font-accent);
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.4rem 1.1rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: 1.25rem;
+}
+
+.counter-pulse-dot {
+  width: 9px;
+  height: 9px;
+  background-color: #2ECC71;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7);
+  animation: pulseGreen 2s infinite;
+}
+
+@keyframes pulseGreen {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(46, 204, 113, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(46, 204, 113, 0); }
+}
+
+.counter-batch-widget {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-md);
+  padding: 1.15rem 1.25rem;
+  margin-top: 1.5rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.counter-batch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.55rem 0.8rem;
+  border-radius: var(--radius-sm);
+  background: rgba(0, 0, 0, 0.3);
+  margin-bottom: 0.5rem;
+  font-size: 0.86rem;
+}
+
+.counter-batch-row:last-child {
+  margin-bottom: 0;
+}
+
+.counter-showcase-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 3px solid rgba(233, 160, 54, 0.35);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.counter-showcase-card img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.counter-showcase-card:hover img {
+  transform: scale(1.03);
+}
+
+.counter-badge-float {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(18, 11, 7, 0.9);
+  border: 1px solid rgba(233, 160, 54, 0.5);
+  color: #FFFFFF;
+  padding: 0.5rem 1.1rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: var(--font-accent);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.counter-ticker-bar {
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-pill);
+  padding: 0.6rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.82rem;
+  font-family: var(--font-accent);
+  margin-top: 1.25rem;
+}
+
+/* ==========================================================================
+   UNIFIED INNER PAGE HERO SYSTEM (Consistent Height & Visual Separation)
+   ========================================================================== */
+.page-hero {
+  min-height: 440px;
+  padding: 9.5rem 0 4.5rem 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  border-bottom: 4px solid var(--accent-primary);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Atmospheric Scrim Overlay for Crystal-Clear Readability */
+.page-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(16, 10, 6, 0.80) 0%, rgba(26, 15, 9, 0.88) 100%);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  z-index: 1;
+}
+
+/* High Contrast Accent Bottom Trim */
+.page-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-primary) 0%, var(--accent-yellow) 50%, var(--accent-secondary) 100%);
+  z-index: 3;
+}
+
+.page-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.page-hero .hero-title {
+  color: #FFFFFF !important;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+}
+
+.page-hero .hero-lead {
+  color: rgba(253, 248, 242, 0.94) !important;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+.page-hero .hero-badge {
+  background: rgba(217, 93, 57, 0.32) !important;
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  color: #FFFFFF !important;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.page-hero .category-filter-nav {
+  position: relative;
+  z-index: 2;
+}
+
+/* Page Hero Themed Background Image Variants */
+.page-hero.hero-menu {
+  background-image: url('../images/menu/menu-hero.jpg');
+}
+
+.page-hero.hero-catering {
+  background-image: url('../images/catering/catering-hero.jpg');
+}
+
+.page-hero.hero-locations {
+  background-image: url('../images/locations/locations-hero.jpg');
+}
+
+.page-hero.hero-story {
+  background-image: url('../images/story/story-heritage-process.jpg');
+}
+
+.page-hero.hero-contact {
+  background-image: url('../images/locations/locations-hero.jpg');
+}
+
+.page-hero.hero-catering-order {
+  background-image: url('../images/catering/catering-hero.jpg');
+}
+
+.page-hero.hero-location-details {
+  background-image: url('../images/locations/locations-hero.jpg');
+}
+
+.page-hero.hero-menu-details {
+  background-image: url('../images/menu/menu-hero.jpg');
+}
+
+.page-hero.hero-coming-soon {
+  background-image: url('../images/street-food/street-food-spread.jpg');
+}
+
+.page-hero.hero-404 {
+  background-image: url('../images/street-food/street-food-spread.jpg');
+}
+
+/* Standard Hero Components */
 .hero-badge,
 span.hero-badge,
 .hero-badge.bg-danger,
@@ -882,33 +1162,305 @@ span.food-card-badge,
   font-size: 0.95rem;
 }
 
-/* Location Card */
+/* ==========================================================================
+   Compact & Balanced Location Cards (Req 7)
+   ========================================================================== */
 .location-card {
   background: var(--bg-surface);
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
-  padding: 2rem;
+  padding: 1.25rem 1.35rem;
   box-shadow: var(--card-shadow);
   transition: all var(--transition-normal);
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .location-card:hover {
   transform: translateY(-4px);
   border-color: var(--accent-primary);
+  box-shadow: var(--card-shadow-hover);
 }
 
-.location-map-placeholder {
-  height: 160px;
+.location-card-image-wrap {
+  height: 145px;
   border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-bottom: 0.85rem;
+  position: relative;
+  background-color: rgba(44, 29, 17, 0.05);
+}
+
+.location-card-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.location-card:hover .location-card-image-wrap img {
+  transform: scale(1.04);
+}
+
+.location-card-title {
+  font-size: 1.35rem !important;
+  margin-bottom: 0.35rem !important;
+  font-family: var(--font-heading);
+}
+
+.location-details-list {
+  font-size: 0.85rem;
+  line-height: 1.45;
+  margin-bottom: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.location-details-list p {
+  margin-bottom: 0.25rem;
+}
+
+.location-tag-pill {
+  font-size: 0.72rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-pill);
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.location-card-actions {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.location-card-actions .btn {
+  padding: 0.45rem 0.85rem !important;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.03em;
+  flex: 1;
+}
+
+/* ==========================================================================
+   Menu Page: Combos & Deals, Final CTA Banner (Req 5)
+   ========================================================================== */
+.combo-card {
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: all var(--transition-normal);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.combo-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-primary);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.combo-card.featured-deal {
+  border: 2px solid var(--accent-primary);
+  position: relative;
+}
+
+.combo-card-header {
   background: linear-gradient(135deg, rgba(217, 93, 57, 0.1), rgba(233, 160, 54, 0.1));
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.combo-card-body {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.combo-items-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 1.5rem 0;
+  flex-grow: 1;
+}
+
+.combo-items-list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed var(--border-color);
+  font-size: 0.9rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: var(--accent-primary);
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  border: 1px dashed var(--accent-primary);
+  gap: 0.6rem;
+}
+
+.final-order-cta-box {
+  background: linear-gradient(135deg, #24160E 0%, #150D08 100%);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem 2.5rem;
+  color: #FDF8F2;
+  border: 1px solid rgba(217, 93, 57, 0.35);
+  box-shadow: var(--card-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.final-order-cta-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(217, 93, 57, 0.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   Catering Page: Menus, Why Choose Us, Gallery, Testimonials (Req 6)
+   ========================================================================== */
+.catering-menu-card {
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  height: 100%;
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+}
+
+.catering-menu-card:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-3px);
+}
+
+.catering-why-card {
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  padding: 2rem 1.75rem;
+  height: 100%;
+  text-align: center;
+  transition: all var(--transition-normal);
+  box-shadow: var(--card-shadow);
+}
+
+.catering-why-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-primary);
+}
+
+.event-gallery-item {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  height: 240px;
+  box-shadow: var(--card-shadow);
+  border: 3px solid var(--bg-surface);
+}
+
+.event-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.event-gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.event-gallery-caption {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  background: rgba(20, 14, 10, 0.85);
+  color: #fff;
+  padding: 0.5rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-family: var(--font-accent);
+  backdrop-filter: blur(8px);
+}
+
+.testimonial-card {
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  box-shadow: var(--card-shadow);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-yellow);
+}
+
+/* ==========================================================================
+   Our Story Page: Philosophy, Team, Street Favorites, Love (Req 8)
+   ========================================================================== */
+.philosophy-card {
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  padding: 2rem 1.75rem;
+  height: 100%;
+  border-top: 4px solid var(--accent-primary);
+  box-shadow: var(--card-shadow);
+  transition: all var(--transition-normal);
+}
+
+.philosophy-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.team-card {
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  height: 100%;
+  transition: all var(--transition-normal);
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-primary);
+}
+
+.favorite-street-food-card {
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  height: 100%;
+  transition: all var(--transition-normal);
+}
+
+.favorite-street-food-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-primary);
+}
+
+.favorite-street-food-card img {
+  height: 190px;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* --------------------------------------------------------------------------
