@@ -760,19 +760,19 @@ img {
 }
 
 .page-hero.hero-story {
-  background-image: url('../images/story/story-heritage-process.jpg');
+  background-image: url('../images/hero/hero-counter-market.jpg');
 }
 
 .page-hero.hero-contact {
-  background-image: url('../images/locations/locations-hero.jpg');
+  background-image: url('../images/hero/hero-counter-market.jpg');
 }
 
 .page-hero.hero-catering-order {
-  background-image: url('../images/catering/catering-hero.jpg');
+  background-image: url('../images/menu/menu-hero.jpg');
 }
 
 .page-hero.hero-location-details {
-  background-image: url('../images/locations/locations-hero.jpg');
+  background-image: url('../images/hero/hero-counter-market.jpg');
 }
 
 .page-hero.hero-menu-details {
@@ -780,11 +780,11 @@ img {
 }
 
 .page-hero.hero-coming-soon {
-  background-image: url('../images/street-food/street-food-spread.jpg');
+  background-image: url('../images/locations/locations-hero.jpg');
 }
 
 .page-hero.hero-404 {
-  background-image: url('../images/street-food/street-food-spread.jpg');
+  background-image: url('../images/hero/hero-empanadas.jpg');
 }
 
 /* Standard Hero Components */
@@ -1501,6 +1501,9 @@ select.form-control-casa,
   color: var(--text-primary) !important;
   border: 1px solid var(--border-color) !important;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25) !important;
+  z-index: 5;
+  width: auto;
+  max-width: min(440px, calc(100% - 1.5rem));
 }
 .map-overlay-card strong,
 .map-overlay-card .font-heading {
@@ -1511,6 +1514,16 @@ select.form-control-casa,
 .map-overlay-card .text-muted {
   color: var(--text-secondary) !important;
   font-weight: 600 !important;
+}
+.map-overlay-card .btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.4rem !important;
+  white-space: nowrap !important;
+  padding: 0.45rem 1rem !important;
+  font-size: 0.85rem !important;
+  line-height: 1.2 !important;
 }
 
 .form-control-casa:focus {
